@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Write TO-DO-LIST"
+            android:textColor="#000000"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sample"
+            android:textColor="#000000"
+            android:visibility="gone"
+            android:textSize="15dp"/>
+    </LinearLayout>
+    <View
+        android:id="@+id/view"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/actionbar1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="Enter what you want to do"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/todo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:inputType="textPersonName"
+            android:textColor="#000000"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/date"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/bg_icon2"/>
+
+        <Button
+            android:layout_toRightOf="@+id/date"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/time1"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/bg_icon3"/>
+
+        <Button
+            android:layout_toRightOf="@+id/time1"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/mic"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/bg_icon4"/>
+
+        <Button
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/register"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/bg_icon"/>
+    </RelativeLayout>
+
+</LinearLayout>
